@@ -1,4 +1,4 @@
-#### Remover espacios en blanco: > y <
+### Remover espacios en blanco: > y <
 Dan más control sobre los espacios en blanco cerca de las etiquetas. > eleminará todos los espacios en blanco que están cerca de la etiqueta, mientras < removerá todos los espacios que estan inmediatamente de la etiqueta. Se pueden tomar como elementos que comen espacios en blanco: > se enfrenta fuera de la etiqueta y se come el espacio en blanco en el exterior, y < se pone frente a la etiqueta y se come los espacios en blanco en el interior. Se colocan al final de una definición de etiqueta, después de la clase, id y declaraciones del atributo pero antes de / o =. Por ejemplo:\
     <pre>
     ```
@@ -57,7 +57,7 @@ es compilado como:
     <img /><pre>foobar</pre><img />
     ```
     </pre>
-#### Doctype: !!!
+### Doctype: !!!
 Al describir los documentos HTML con Haml, puede tener un tipo de documento XML o prologo generado automáticamente por incluir los caracteres !!!. Por ejemplo:
     <pre>
     ```
@@ -91,7 +91,7 @@ Cuando la opción de :format se establece en :html5, !!! es siempre <!DOCTYPE ht
 
     !!! XML iso-8859-1
 
-#### HTML Comments: /
+### HTML Comments: /
 El carácter de barra inclinada, cuando se coloca al principio de la línea, envuelve todo el texto en un comentario de HTML. Por ejemplo:
     <pre>
     ```
@@ -129,7 +129,7 @@ se compila como:
     -->
     ```
     </pre>
-#### Haml Comments: -#
+### Haml Comments: -#
 El guión seguido inmediatamente por el signo de número, significa un comentario silencioso. Cualquier texto que sigue a esto no es tomado en el documento resultante en absoluto. Por ejemplo:
     <pre>
     ```
@@ -191,21 +191,21 @@ se compila como:
     </div>
     ```
     </pre>
-#### Estos son algunos de los filtros de Haml:
+### Estos son algunos de los filtros de Haml:
 
-##### :cdata
+#### :cdata
 rodea el texto filtrado con etiquetas CDATA.
 
-##### :coffee
+#### :coffee
 compila el texto filtrado a Javascript usando Cofeescript. También puede hacer referencia a este filtro como  :coffeescript. Este filtro se implementa con Tilt.
 
-##### : css
+#### : css
 rodea el texto con un filtro de <style> y opcionalmente con etiquetas CDATA . Se usa mucho para las líneas de CSS.
 
-##### :javascript
+#### :javascript
 rodea el texto con un filtro de <script> y opcionalmente con etiquetas CDATA . Se usa mucho para las líneas de JS.
 
-##### :less
+#### :less
 Analiza el texto filtrado con menos para producir la salida CSS. Este filtro se implementa con Tilt.
 
 ### Métodos Auxiliares
