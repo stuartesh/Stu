@@ -1,7 +1,5 @@
 #### Remover espacios en blanco: > y <
-> y < dan más control sobre los espacios en blanco cerca de las etiquetas. > eleminará todos los espacios en blanco que están cerca de la etiqueta, mientras < removerá todos los espacios que estan inmediatamente de la etiqueta. Se pueden tomar como elementos que comen espacios en blanco: > se enfrenta fuera de la etiqueta y se come el espacio en blanco en el exterior, y < se pone frente a la etiqueta y se come los espacios en blanco en el interior. Se colocan al final de una definición de etiqueta, después de la clase, id y declaraciones del atributo pero antes de / o =. Por ejemplo:
-
-.
+Dan más control sobre los espacios en blanco cerca de las etiquetas. > eleminará todos los espacios en blanco que están cerca de la etiqueta, mientras < removerá todos los espacios que estan inmediatamente de la etiqueta. Se pueden tomar como elementos que comen espacios en blanco: > se enfrenta fuera de la etiqueta y se come el espacio en blanco en el exterior, y < se pone frente a la etiqueta y se come los espacios en blanco en el interior. Se colocan al final de una definición de etiqueta, después de la clase, id y declaraciones del atributo pero antes de / o =. Por ejemplo:
     <pre>
     %blockquote<
     %div
@@ -35,8 +33,8 @@ Y finalmente:
     <pre>
     %img
     %pre><
-      foo
-      bar
+    foo
+    bar
     %img
     </pre>
 es compilado como:
@@ -50,23 +48,23 @@ Al describir los documentos HTML con Haml, puede tener un tipo de documento XML 
     !!! XML
     !!!
     %html
-     %head
-      %title Myspace
-      %body
-       %h1 I am the international space station
-       %p Sign my guestbook
+    %head
+    %title Myspace
+    %body
+    %h1 I am the international space station
+    %p Sign my guestbook
     </pre>
 se compila como:
     <pre>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html>
-     <head>
-     <title>Myspace</title>
-     </head>
-     <body>
-        <h1>I am the international space station</h1>
-        <p>Sign my guestbook</p>
-     </body>
+    <head>
+    <title>Myspace</title>
+    </head>
+    <body>
+    <h1>I am the international space station</h1>
+    <p>Sign my guestbook</p>
+    </body>
     </html>
     </pre>
 Cuando la opción de :format se establece en :html5, !!! es siempre <!DOCTYPE html>. Si no estás usando el conjunto de su documento de caracteres UTF-8, puede especificar qué codificación debe aparecer en el prólogo XML de una manera similar. Por ejemplo:
