@@ -200,10 +200,10 @@ rodea el texto filtrado con etiquetas CDATA.
 compila el texto filtrado a Javascript usando Cofeescript. También puede hacer referencia a este filtro como  :coffeescript. Este filtro se implementa con Tilt.
 
 #### : css
-rodea el texto con un filtro de <style> y opcionalmente con etiquetas CDATA . Se usa mucho para las líneas de CSS.
+rodea el texto con un filtro de `<style>` y opcionalmente con etiquetas CDATA . Se usa mucho para las líneas de CSS.
 
 #### :javascript
-rodea el texto con un filtro de <script> y opcionalmente con etiquetas CDATA . Se usa mucho para las líneas de JS.
+rodea el texto con un filtro de `<script>` y opcionalmente con etiquetas CDATA . Se usa mucho para las líneas de JS.
 
 #### :less
 Analiza el texto filtrado con menos para producir la salida CSS. Este filtro se implementa con Tilt.
@@ -220,6 +220,7 @@ Rodea un bloque Haml con texto. Espera 1 ó 2 argumentos de cadena usados para r
     = link_to "learn more", "#"
     ```
     </pre>
+
 #### precede
 Antepone un bloque Haml con texto. Espera 1 argumento.
     <pre>
@@ -228,6 +229,7 @@ Antepone un bloque Haml con texto. Espera 1 argumento.
     %span Required
     ```
     </pre>
+
 #### succeed
 Anexa un bloque Haml con texto. Espera 1 argumento.
 
@@ -243,6 +245,7 @@ Comienza por:
     = link_to "inviting friends", "#"
     ```
     </pre>
+    
 >ESTO ES UN ELANCE QUE PUEDE AYUDAR A OBTENER MÁS INFORMACIÓN SOBRE HAML.
 [http://haml.info/docs/yardoc/](http://haml.info/docs/yardoc/)
 
